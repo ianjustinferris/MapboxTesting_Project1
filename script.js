@@ -21,8 +21,8 @@ map.addLayer({
 'source-layer': 'Athene_Cunicularia_Dataset-bqcy9s',
  paint: {
     'circle-radius': 3,
-    'circle-color': '#cef8b9',
-    'circle-stroke-color': 'white',
+    'circle-color': '#00FF99',
+    'circle-stroke-color': '#006666',
     'circle-stroke-width': 1,
     'circle-opacity': .75
   }
@@ -41,10 +41,10 @@ map.addLayer({
 'source-layer': 'Urocyon_cinereoargenteus_Data-5iuwnb',
  paint: {
     'circle-radius': 5,
-    'circle-color': '#F39C12',
-    'circle-stroke-color': 'white',
+    'circle-color': '#F4511E',
+    'circle-stroke-color': '#BF360C',
     'circle-stroke-width': 1,
-    'circle-opacity': .85
+    'circle-opacity': 1
   }
 });
 });
@@ -61,9 +61,9 @@ map.addLayer({
 'source-layer': 'Pantherophis_alleghaniensis-4e6fa5',
  paint: {
     'circle-radius': 3.5,
-    'circle-color': '#E74C3C',
-    'circle-stroke-color': 'white',
-    'circle-stroke-width': 1,
+    'circle-color': '#FFCC66',
+    'circle-stroke-color': '#CC6633 ',
+    'circle-stroke-width': 1.5,
     'circle-opacity': .85
   }
 });
