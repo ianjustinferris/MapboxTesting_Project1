@@ -8,24 +8,7 @@ mapboxgl.accessToken =
       });
 
 
-//Add occurance Layer Flying Squirrel
-// map.on('load', () => {
-// map.addSource('ianjustinferris.7e7jfhov', {
-// type: 'vector',
-// url: 'mapbox://mapbox.ianjustinferris.7e7jfhov'
-// });
-// map.addLayer({
-// 'id': 'ianjustinferris.7e7jfhov',
-// 'type': 'fill',
-// 'source': 'ianjustinferris.7e7jfhov',
-// 'source-layer': 'roads',
 
-
-
-// });
-// });
-
- 
 map.on('load', () => {
 map.addSource('thene_Cunicularia_Dataset-bqcy9s', {
 type: 'vector',
@@ -37,11 +20,31 @@ map.addLayer({
 'source': 'thene_Cunicularia_Dataset-bqcy9s',
 'source-layer': 'Athene_Cunicularia_Dataset-bqcy9s',
  paint: {
-    'circle-radius': 2.5,
+    'circle-radius': 3,
     'circle-color': '#cef8b9',
     'circle-stroke-color': 'white',
     'circle-stroke-width': 1,
-    'circle-opacity': 1
+    'circle-opacity': .75
+  }
+});
+});
+
+map.on('load', () => {
+map.addSource('Urocyon_cinereoargenteus_Data-5iuwnb', {
+type: 'vector',
+url: 'mapbox://ianjustinferris.9irq28sz'
+});
+map.addLayer({
+'id': 'ianjustinferris.9irq28sz',
+'type': 'circle',
+'source': 'Urocyon_cinereoargenteus_Data-5iuwnb',
+'source-layer': 'Urocyon_cinereoargenteus_Data-5iuwnb',
+ paint: {
+    'circle-radius': 5,
+    'circle-color': '#F39C12',
+    'circle-stroke-color': 'white',
+    'circle-stroke-width': 1,
+    'circle-opacity': .75
   }
 });
 });
