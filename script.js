@@ -44,7 +44,27 @@ map.addLayer({
     'circle-color': '#F39C12',
     'circle-stroke-color': 'white',
     'circle-stroke-width': 1,
-    'circle-opacity': .75
+    'circle-opacity': .85
+  }
+});
+});
+
+map.on('load', () => {
+map.addSource('Pantherophis_alleghaniensis-4e6fa5', {
+type: 'vector',
+url: 'mapbox://ianjustinferris.9ybevubg'
+});
+map.addLayer({
+'id': 'ianjustinferris.9ybevubg',
+'type': 'circle',
+'source': 'Pantherophis_alleghaniensis-4e6fa5',
+'source-layer': 'Pantherophis_alleghaniensis-4e6fa5',
+ paint: {
+    'circle-radius': 3.5,
+    'circle-color': '#E74C3C',
+    'circle-stroke-color': 'white',
+    'circle-stroke-width': 1,
+    'circle-opacity': .85
   }
 });
 });
